@@ -50,7 +50,6 @@ function smoothScrolling(element, duration) {
 
 document.querySelectorAll("a[href*='#']:not([href='#'])").forEach(function(el) {
 	el.addEventListener("click", function(e) {
-		// e.preventDefault();
-		doScrolling(this, 1500);
+		smoothScrolling(this, 1500);
 	});
 });
