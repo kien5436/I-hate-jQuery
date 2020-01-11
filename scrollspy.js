@@ -57,7 +57,7 @@ function elemScroll(scroller, direction, offset, callback) {
   scroller.addEventListener('scroll', function() {
 
     const scrollTop = this.scrollTop / this.scrollHeight;
-    console.info(scrollTop, lastScrollTop, scrollTop + .1 - offset)
+    
     switch (direction) {
       case 'down':
         if (this.scrollTop > lastScrollTop && scrollTop + .1 - offset >= 0) {
